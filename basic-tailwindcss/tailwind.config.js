@@ -3,11 +3,16 @@
   
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'sans': ['Noto Sans Lao Looped', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
   
 }
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class', // ໃຫ້ແນ່ໃຈວ່າຕັ້ງຄ່າເປັນ 'class'
@@ -18,5 +23,8 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
 }

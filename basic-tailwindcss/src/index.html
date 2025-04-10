@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark Mode Example (Tailwind CSS - Full Code)</title>
     <link rel="stylesheet" href="output.css">
-   
-   
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-    
-    <header class="p-0 m-0 bg-white dark:bg-gray-800 py-4 shadow-md transition-colors duration-300 **relative**">
+<body class="font-sans bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <header class="p-0 m-0 bg-white dark:bg-gray-800 py-4 shadow-md transition-colors duration-300 relative">
         <div class="container mx-auto flex justify-between items-center px-8">
-            <a href="#" class="text-xl font-bold text-gray-900 dark:text-gray-100 transition-colors duration-300">ຊື່ເວັບໄຊທ໌</a>
+            <a href="#" class="text-xl font-bold text-gray-900 dark:text-gray-100 transition-colors duration-300">Pong</a>
             <nav class="hidden md:flex space-x-4">
                 <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">ໜ້າທຳອິດ</a>
                 <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300">ກ່ຽວກັບພວກເຮົາ</a>
@@ -34,89 +31,51 @@
                     </svg>
                 </button>
             </div>
-
-            <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-800 shadow-md py-2 hidden">
-                <a href="#" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300">ໜ້າທຳອິດ</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300">ກ່ຽວກັບພວກເຮົາ</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300">ບໍລິການ</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300">ຕິດຕໍ່</a>
-            </div>
+        </div>
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white dark:bg-gray-800 shadow-md rounded-md z-10 hidden md:hidden">
+            <nav class="px-4 py-2 **flex flex-col space-y-2**">
+                <a href="#" class="block text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-4 rounded-md transition-colors duration-300">ໜ້າທຳອິດ</a>
+                <a href="#" class="block text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-4 rounded-md transition-colors duration-300">ກ່ຽວກັບພວກເຮົາ</a>
+                <a href="#" class="block text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-4 rounded-md transition-colors duration-300">ບໍລິການ</a>
+                <a href="#" class="block text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 py-2 px-4 rounded-md transition-colors duration-300">ຕິດຕໍ່</a>
+            </nav>
         </div>
     </header>
-
-    <div class="container mx-auto p-8">
-        <header class="mb-6">
-            <h1 class="text-3xl font-bold mb-2 text-gray-900 dark:text-gray-100 transition-colors duration-300">ຍິນດີຕ້ອນຮັບສູ່ໜ້າເວັບຂອງພວກເຮົາ</h1>
-            <p class="text-gray-600 dark:text-gray-400 transition-colors duration-300">ນີ້ແມ່ນຕົວຢ່າງຂອງໜ້າເວັບທີ່ຮອງຮັບຮູບແບບສີອ່ອນ ແລະສີເຂັ້ມ.</p>
-        </header>
-
-        <main class="mb-8">
-            <section class="bg-white dark:bg-gray-800 shadow rounded-md p-6 mb-4 transition-colors duration-300">
-                <h2 class="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100 transition-colors duration-300">ພາກທີ 1</h2>
-                <p class="text-gray-700 dark:text-gray-300 transition-colors duration-300">
-                    ຂໍ້ຄວາມຕົວຢ່າງໃນພາກທີ 1. ທ່ານສາມາດເພີ່ມເນື້ອຫາເພີ່ມເຕີມໄດ້ທີ່ນີ້.
-                    ນີ້ແມ່ນ <strong class="font-semibold text-blue-500 dark:text-blue-400 transition-colors duration-300">ຂໍ້ຄວາມທີ່ເນັ້ນ</strong> ເພື່ອສະແດງສີທີ່ແຕກຕ່າງ.
-                </p>
-                <ul class="list-disc ml-6 mt-2 text-gray-700 dark:text-gray-300 transition-colors duration-300">
-                    <li>ລາຍການທີ 1</li>
-                    <li><a href="#" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition-colors duration-300">ລິ້ງຕົວຢ່າງ</a></li>
-                    <li>ລາຍການທີ 3</li>
-                </ul>
-            </section>
-
-            <section class="bg-white dark:bg-gray-800 shadow rounded-md p-6 mb-4 transition-colors duration-300">
-                <h2 class="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100 transition-colors duration-300">ພາກທີ 2</h2>
-                <p class="text-gray-700 dark:text-gray-300 transition-colors duration-300">
-                    ຂໍ້ຄວາມຕົວຢ່າງໃນພາກທີ 2. ຮູບພາບ, ວິດີໂອ, ຫຼືອົງປະກອບອື່ນໆສາມາດຖືກເພີ່ມເຂົ້າໃນພາກນີ້.
-                    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">ປຸ່ມສີຂຽວ</button>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded dark:bg-blue-700 dark:hover:bg-blue-500 transition-colors duration-300">ປຸ່ມສີຟ້າ</button>
-                </p>
-                <div class="border border-gray-300 dark:border-gray-700 rounded-md p-4 mt-2 transition-colors duration-300">
-                    <p class="text-sm text-gray-500 dark:text-gray-400 transition-colors duration-300">ກ່ອງທີ່ມີຂອບ.</p>
-                </div>
-            </section>
-        </main>
-
-        <footer class="text-center text-gray-500 dark:text-gray-400 mt-8 transition-colors duration-300">
-            <p>&copy; 2025 ຕົວຢ່າງໜ້າເວັບ</p>
-        </footer>
-
-      
+    <h1 class="text-red-900">hello pong</h1>
     </div>
-     
     <script>
-       const themeToggleBtn = document.getElementById('theme-toggle');
-const html = document.documentElement;
-const moonIcon = document.getElementById('moon-icon');
-const sunIcon = document.getElementById('sun-icon');
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        const moonIcon = document.getElementById('moon-icon');
+        const sunIcon = document.getElementById('sun-icon');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-themeToggleBtn.addEventListener('click', () => {
-    html.classList.toggle('dark');
-    const isDarkMode = html.classList.contains('dark');
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-    moonIcon.classList.toggle('hidden', !isDarkMode);
-    sunIcon.classList.toggle('hidden', isDarkMode);
-});
+        themeToggleBtn.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const isDarkMode = html.classList.contains('dark');
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            moonIcon.classList.toggle('hidden', !isDarkMode);
+            sunIcon.classList.toggle('hidden', isDarkMode);
+        });
 
-// ກວດສອບຮູບແບບສີທີ່ບັນທຶກໄວ້ໃນ localStorage ຫຼືຕາມການຕັ້ງຄ່າຂອງລະບົບ
-const storedTheme = localStorage.getItem('theme');
-if (storedTheme) {
-    html.classList.toggle('dark', storedTheme === 'dark');
-} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    html.classList.add('dark');
-}
+        // ກວດສອບຮູບແບບສີທີ່ບັນທຶກໄວ້ໃນ localStorage ຫຼືຕາມການຕັ້ງຄ່າຂອງລະບົບ
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            html.classList.toggle('dark', storedTheme === 'dark');
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            html.classList.add('dark');
+        }
 
-// ເລີ່ມຕົ້ນສະແດງໄອຄອນໃຫ້ຖືກຕ້ອງ
-const initialDarkMode = html.classList.contains('dark');
-moonIcon.classList.toggle('hidden', !initialDarkMode);
-sunIcon.classList.toggle('hidden', initialDarkMode);
+        // ເລີ່ມຕົ້ນສະແດງໄອຄອນໃຫ້ຖືກຕ້ອງ
+        const initialDarkMode = html.classList.contains('dark');
+        moonIcon.classList.toggle('hidden', !initialDarkMode);
+        sunIcon.classList.toggle('hidden', initialDarkMode);
 
-// ເປີດ/ປິດເມນູມືຖື
-mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
+        // JavaScript ສໍາລັບເມນູມືຖື
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
     </script>
 </body>
 </html>
